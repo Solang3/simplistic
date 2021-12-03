@@ -7,7 +7,7 @@ body {padding: 0; margin: 0; font-family: 'Raleway', sans-serif; color: #000; fo
 .main-menu .item a { text-transform: uppercase; text-decoration: none; color: #000; font-weight: 700;}
 .main-menu .item a:hover { color: #27c8cc}
 .search, .close { padding: 10px; position: absolute; right: 17px; top: 34px; cursor: pointer;}
-.close { right: 17px; top: 150px; }
+
 .search i.fa-search { font-size: 26px; color: #27c8cc; }
 .search i.fa-search:hover { color: #000; }
 .close i.fa-close { font-size: 32px; color: #fff; }
@@ -20,17 +20,36 @@ body {padding: 0; margin: 0; font-family: 'Raleway', sans-serif; color: #000; fo
 .services.grid { width: 100%; max-width: 1220px; margin: 84px auto; box-sizing: content-box;}
 .services h2 { font-size: 30px; font-weight: 900; letter-spacing: 0.05em; margin: 0 0 54px; text-align: center;}
 .services h3 { line-height: 228px; text-align: center; margin: 0; color: #fff; font-size: 24px; font-weight: 900; letter-spacing: 0.05em;}
-.services .service-1 h3{ background-image: url(/images/service1.jpg); background-size: cover;}
-.services .service-2 h3{ background-image: url(/images/service2.jpg); background-size: cover;}
-.services .service-3 h3{ background-image: url(/images/service3.jpg); background-size: cover;}
-.services .service-4 h3{ background-image: url(/images/service4.jpg); background-size: cover;}
+.services .service-1 h3{ background-image: url(../images/service1.jpg); background-size: cover;}
+.services .service-2 h3{ background-image: url(../images/service2.jpg); background-size: cover;}
+.services .service-3 h3{ background-image: url(../images/service3.jpg); background-size: cover;}
+.services .service-4 h3{ background-image: url(../images/service4.jpg); background-size: cover;}
 footer { background: #eee; text-align: center; padding: 66px 20px;}
 footer .input-container { position: relative; max-width: 412px; margin: 0 auto 45px; background: #fff;}
 footer .input-container a.submit { padding: 17px 20px; position: absolute; right: 0; top: 0; }
 footer .input-container a .arrow { display: block; width: 10px; height: 10px; border-right: 2px solid #ccc; border-top: 2px solid #ccc; transform: rotate(45deg);}
 footer .input-container input[type="email" i] { background: transparent; border: none; height: 46px; box-sizing: border-box; line-height: 46px; padding: 0 30px; width: 100%; font-size: 18px;}
 .modal-search { background:rgba(0, 0, 0, 0.8); position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
-.modal-search #results { position: absolute; width: 670px; top: 260px; left: 50%; margin-left: -335px;}
+.modal-search #results { height: 72px; position: absolute; width: 670px; top: 260px; left: 50%; margin-left: -335px; background: transparent; border: 1px solid #fff; color: #fff; font-size: 32px; padding: 0 27px;}
+.modal-search #results::placeholder { color: #fff; opacity: 1;}
+.modal-search #results::-ms-input-placeholder { color: #fff; }
+.modal-search #results::-ms-input-placeholder { color: #fff; }
+.modal-search #results::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+  background-size: contain;
+  opacity: 0;
+  pointer-events: none;
+  filter: invert(1);
+}
+.modal-search #results:focus::-webkit-search-cancel-button {
+  opacity: .3;
+  pointer-events: all;
+}
+  
 
 @media all and (max-width:900px){
   /* TABLET STYLES */ 

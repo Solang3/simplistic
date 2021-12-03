@@ -18,32 +18,23 @@ $(function(){
             results.setAttribute('list', datalist.id);
             let fragment = document.createDocumentFragment();
             for (let result of data) {
-                let optionItem = document.createElement('option');
-                optionItem.appendChild(
+                let option = document.createElement('option');
+                option.appendChild(
                     document.createElement('strong')
                 ).textContent = result.title;
-                optionItem.append(
+                option.append(
                     ` Precio: ${ result.price } `
                 );
-                results.appendChild(optionItem);
-            fragment.append(optionItem);
+                results.appendChild(option);
+            fragment.append(option);
             }
             datalist.append(fragment);
             results.after(datalist);
-            for (let result of data) {
-                let optionItem = document.createElement('option');
-                optionItem.appendChild(
-                    document.createElement('strong')
-                ).textContent = result.title;
-                optionItem.append(
-                    ` Precio: ${ result.price } `
-                );
-                results.appendChild(optionItem);
-            }
         }
         
         $('#search').click(function() {
             $('.modal-search').slideToggle("slow");
+            $('.modal-search #results').focus();
         });
         $('.fa-close').click(function() {
             $('.modal-search').slideToggle("slow");
