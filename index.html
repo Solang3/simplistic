@@ -1,0 +1,110 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <title>Challenge</title>
+  <meta name="description" content="Simplistic Challenge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+  <link rel="stylesheet" href="styles/styles.css" type="text/css" media="all">
+
+  <script src="javascript/jquery.js"></script>
+  <script src="javascript/scripts.js" defer="defer"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900&display=swap">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header role="banner">
+    <div class="main-content flex justify-content-between align-items-center">
+      <div class="hide medium-down--show flex-1">
+        <a href="#menu-mobile" class="menu-mobile-button flex align-items-center justify-content-center"
+          aria-label="Open Menu">
+          <div class="icon"></div>
+        </a>
+      </div>
+      <div class="hide medium-down--flex flex-1 justify-content-end align-items-center">
+        <a href="#contact" class="contact-button scrollTo" aria-label="Contact us"><svg aria-hidden="true"
+            tabindex="-1" role="presentation" class="icon icon-bubble" viewBox="0 0 32 32">
+            <path fill="#ffffff"
+              d="M16,2.101c-7.166,0-15.5,4.44-15.5,12.299c0,3.268,1.659,6.438,4.561,8.73c-0.472,1.217-1.586,3.276-4.03,4.743 c-0.419,0.251-0.622,0.756-0.491,1.226c0.131,0.472,0.563,0.801,1.052,0.801c1.694,0,3.782-0.611,6.204-1.816 c1.488-0.74,2.749-1.532,3.428-1.979C22.167,28.707,31.5,22.249,31.5,14.399C31.5,8.791,26.126,2.101,16,2.101z M7.397,23.009 c0.118-0.44-0.053-0.912-0.427-1.175c-2.725-1.914-4.288-4.625-4.288-7.435C2.683,8.821,8.657,4.283,16,4.283 c7.344,0,13.156,4.311,13.318,10.116c0.162,5.819-7.693,12.194-17.99,9.473c-0.39-0.104-0.736,0.024-0.919,0.149 c-1.554,1.069-3.308,2.036-4.876,2.698C6.733,25.133,7.229,23.644,7.397,23.009z">
+            </path>
+          </svg></a>
+      </div>
+      <div class="nav-wrapper medium-down--hide flex align-items-center justify-content-center">
+        <nav class="main-menu flex align-items-center justify-content-between" role="navigation">
+          <div class="item"><a href="/" class=""><span>Shop</span></a></div>
+          <div class="item"><a href="/" class=""><span>About</span></a></div>
+          <a href="/" class="logo">
+            <img src="/images/logo.png" alt="New Logo">
+          </a>
+          <div class="item"><a href="/" class=""><span>Blog</span></a></div>
+          <div class="item"><a href="/" class=""><span>Contact</span></a></div>
+        </nav>
+        <a div class="search" id="search">
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main" role="main">
+    <div class="grid">
+      <section class="hero small--hide grid__item large--one-whole medium--one-whole">
+        <div class="hero-content flex direction-column align-items-center justify-content-center">
+          <h1>Lorem Ipsum</h1>
+          <p>Phacellus faucibus velic nec est pulvinar, a fringillia mauris pretium. <br>
+              Proin nec est in eros suscipit imperdiet vitae vel lorem.
+          </p>
+          <a href="#" class="button" alt="Learn More">Learn More</a>
+        </div>
+      </section>
+      <section class="hero large--hide">
+        2
+      </section>
+      <section class="services grid">
+        <div class="service-1 grid__item large--one-whole">
+          <h2 class="text-uppercase">Services</h2>
+        </div>
+        <div class="service-1 grid__item large--one-quarter  medium--one-half small--one-whole">
+          <h3 class="text-uppercase">Service 1</h3>
+        </div>
+        <div class="service-2 grid__item large--one-quarter  medium--one-half small--one-whole">
+          <h3 class="text-uppercase">Service 2</h3>
+        </div>
+        <div class="service-3 grid__item large--one-quarter  medium--one-half small--one-whole">
+          <h3 class="text-uppercase">Service 3</h3>
+        </div>
+        <div class="service-4 grid__item large--one-quarter  medium--one-half small--one-whole">
+          <h3 class="text-uppercase">Service 4</h3>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="input-container">
+      <input type="email" placeholder="Email address">
+      <a href="#" class="submit">
+        <div class="arrow"></div>
+      </a>
+    </div>
+    <p class="copyright">&#169; Copyright New Logo 2020</p>
+  </footer>
+  <div class="modal-search hide">
+    <a div class="close" id="close">
+      <i class="fa fa-close"></i>
+    </a>
+    <input type="search" id="results">
+  </div>
+</body>
+</html>
