@@ -32,12 +32,16 @@ $(function(){
             results.after(datalist);
         }
         
-        $('#search').click(function() {
+        $('.search').click(function() {
             $('.modal-search').slideToggle("slow");
             $('.modal-search #results').focus();
         });
         $('.fa-close').click(function() {
             $('.modal-search').slideToggle("slow");
         });
+        $('.menu-mobile-button').click(function() {
+            $('.nav-wrapper-mobile').slideToggle("slow");
+        });
+        
     });
 });

@@ -2,28 +2,31 @@
 body {padding: 0; margin: 0; font-family: 'Raleway', sans-serif; color: #000; font-size: 14px;}
 .logo { max-width: 250px; margin: 0 20px;}
 .logo img { width: 100%;}
+.nav-mobile { height: 100px; }
 .nav-wrapper { width: 100%; height: 120px; position: relative;}
 .main-menu { width: 792px;}
-.main-menu .item a { text-transform: uppercase; text-decoration: none; color: #000; font-weight: 700;}
-.main-menu .item a:hover { color: #27c8cc}
+.main-menu .item a { text-transform: uppercase; text-decoration: none; color: #000; font-weight: 700;  transition: all .5s}
+.main-menu .item a:hover { color: #27c8cc;  transition: all .5s}
 .search, .close { padding: 10px; position: absolute; right: 17px; top: 34px; cursor: pointer;}
-
-.search i.fa-search { font-size: 26px; color: #27c8cc; }
-.search i.fa-search:hover { color: #000; }
-.close i.fa-close { font-size: 32px; color: #fff; }
-.close i.fa-close:hover { color: #27c8cc; }
+.search i.fa-search { font-size: 26px; color: #27c8cc;  transition: all .5s }
+.search i.fa-search:hover { color: #000;  transition: all .5s}
+.close i.fa-close { font-size: 32px; color: #fff;  transition: all .5s}
+.close i.fa-close:hover { color: #27c8cc;  transition: all .5s}
 .hero { min-height: 300px; max-height: 800px; height: calc(100vh - 120px); background: url('../images/hero.jpg'); background-position: top center; background-size: cover; box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5)}
 .hero-content { height: calc(100vh - 120px); color: #fff}
 .hero-content h1 { margin: 0 0 45px 0; text-transform: uppercase; font-size: 45px; font-weight: 900; letter-spacing: 0.05em;}
 .hero-content p { margin: 0 0 45px 0; font-size: 18px; font-weight: 400;}
-.hero a.button { padding: 0 50px; height: 48px; line-height: 48px; color: #fff; text-decoration: none; font-size: 15px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; background-color: #27c8cc; border-radius: 24px;}
-.services.grid { width: 100%; max-width: 1220px; margin: 84px auto; box-sizing: content-box;}
+.hero a.button { padding: 0 50px; height: 48px; line-height: 48px; color: #333; text-decoration: none; font-size: 15px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; background-color: #fff; border-radius: 24px;  transition: all .5s}
+.hero a.button:hover { background: #27c8cc; color: #fff; transition: all .5s}
 .services h2 { font-size: 30px; font-weight: 900; letter-spacing: 0.05em; margin: 0 0 54px; text-align: center;}
-.services h3 { line-height: 228px; text-align: center; margin: 0; color: #fff; font-size: 24px; font-weight: 900; letter-spacing: 0.05em;}
-.services .service-1 h3{ background-image: url(../images/service1.jpg); background-size: cover;}
-.services .service-2 h3{ background-image: url(../images/service2.jpg); background-size: cover;}
-.services .service-3 h3{ background-image: url(../images/service3.jpg); background-size: cover;}
-.services .service-4 h3{ background-image: url(../images/service4.jpg); background-size: cover;}
+.services h3 {color: #fff; opacity: 0; font-size: 24px; font-weight: 900; letter-spacing: 0.05em; transition: all .5s;}
+.services .service:hover h3 {opacity: 1; transition: all .5s;}
+.services .service { height: 228px; background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; cursor: pointer}
+.services .service:hover {box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5)}
+.services .service-1{ background-image: url(../images/service1.jpg);}
+.services .service-2 { background-image: url(../images/service2.jpg);}
+.services .service-3 { background-image: url(../images/service3.jpg);}
+.services .service-4 { background-image: url(../images/service4.jpg);}
 footer { background: #eee; text-align: center; padding: 66px 20px;}
 footer .input-container { position: relative; max-width: 412px; margin: 0 auto 45px; background: #fff;}
 footer .input-container a.submit { padding: 17px 20px; position: absolute; right: 0; top: 0; }
@@ -52,13 +55,30 @@ footer .input-container input[type="email" i] { background: transparent; border:
   
 
 @media all and (max-width:900px){
-  /* TABLET STYLES */ 
+  .logo { display: block; max-width: 206px; margin: 0;}
+  .search { right: 57px; top: 24px; }
+  .close { right: 13px; top: 21px; }
+  .main-menu { flex-direction: column; background: rgba(39, 200, 204, 0.8); width: 100%;}
+  .main-menu .item a { color: #fff; padding: 24px; display: block; width: 100%; box-sizing: border-box; font-size: 18px;     background: rgba(0, 0, 0, 0.8);}
+  .menu-mobile-button { padding: 10px; font-size: 28px; color: #000; margin-right: -10px; text-decoration: none; margin-top: -4px;}
+  .nav-wrapper-mobile {position: absolute; top: 100px; right: 0px; left: 0px; display: block;}
+  .nav-mobile { width: 100%; padding: 0 24px;}
+  .hero, .hero-content, .main-menu  {height: calc(100vh - 100px);}
+  .hero-content {  padding: 0 50px; text-align: center;}
+  .services.grid { padding: 0 30px; margin-top: 84px; margin-bottom: 84px;}
+  .services .service { margin-bottom: 20px;}
+  .modal-search #results { height: 52px; width: 340px; top: 170px; margin-left: -170px; font-size: 17px; padding: 0 17px; }
+  .services .service { height: 275px;}
 }
 
 @media all and (max-width:600px){
-  /* MOBILE PHONES STYLES */  
+  .services .service { height: 280px;}
+  .modal-search #results { width: 290px; top: 170px; margin-left: -145px; height: 42px; font-size: 15px; padding: 0 10px;}
 }
 
+@media all and (min-width:900px){
+  .services.grid { width: 100%; max-width: 1220px; margin: 84px auto; box-sizing: content-box;}
+}
 
 /*
 ************ HELPERS ************

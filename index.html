@@ -26,10 +26,16 @@
 <body>
   <header role="banner">
     <div class="main-content flex justify-content-between align-items-center">
-      <div class="hide medium-down--show flex-1">
+      <div class="nav-mobile large--hide flex justify-content-between align-items-center">
+        <a href="/" class="logo">
+          <img src="images/logo.png" alt="New Logo">
+        </a>
+        <a div class="search">
+          <i class="fa fa-search"></i>
+        </a>
         <a href="#menu-mobile" class="menu-mobile-button flex align-items-center justify-content-center"
           aria-label="Open Menu">
-          <div class="icon"></div>
+          <i class="fa fa-bars"></i>
         </a>
       </div>
       <div class="nav-wrapper medium-down--hide flex align-items-center justify-content-center">
@@ -42,45 +48,56 @@
           <div class="item"><a href="/" class=""><span>Blog</span></a></div>
           <div class="item"><a href="/" class=""><span>Contact</span></a></div>
         </nav>
-        <a div class="search" id="search">
+        <a div class="search">
           <i class="fa fa-search"></i>
         </a>
+      </div>
+      <div class="nav-wrapper-mobile hide">
+        <nav class="main-menu flex align-items-center justify-content-around" role="navigation">
+          <div class="item"><a href="/" class=""><span>Shop</span></a></div>
+          <div class="item"><a href="/" class=""><span>About</span></a></div>
+          <div class="item"><a href="/" class=""><span>Blog</span></a></div>
+          <div class="item"><a href="/" class=""><span>Contact</span></a></div>
+        </nav>
       </div>
     </div>
   </header>
 
   <main class="main" role="main">
-    <div class="grid">
-      <section class="hero small--hide grid__item large--one-whole medium--one-whole">
-        <div class="hero-content flex direction-column align-items-center justify-content-center">
-          <h1>Lorem Ipsum</h1>
-          <p>Phacellus faucibus velic nec est pulvinar, a fringillia mauris pretium. <br>
-              Proin nec est in eros suscipit imperdiet vitae vel lorem.
-          </p>
-          <a href="#" class="button" alt="Learn More">Learn More</a>
-        </div>
-      </section>
-      <section class="hero large--hide">
-        2
-      </section>
-      <section class="services grid">
-        <div class="service-1 grid__item large--one-whole">
-          <h2 class="text-uppercase">Services</h2>
-        </div>
-        <div class="service-1 grid__item large--one-quarter  medium--one-half small--one-whole">
+    <section class="hero grid__item large--one-whole medium--one-whole">
+      <div class="hero-content flex direction-column align-items-center justify-content-center">
+        <h1>Lorem Ipsum</h1>
+        <p>Phacellus faucibus velic nec est pulvinar, a fringillia mauris pretium. <br>
+            Proin nec est in eros suscipit imperdiet vitae vel lorem.
+        </p>
+        <a href="#" class="button" alt="Learn More">Learn More</a>
+      </div>
+    </section>
+    <section class="services grid">
+      <div class="grid__item large--one-whole medium--one-whole small--one-whole">
+        <h2 class="text-uppercase">Services</h2>
+      </div>
+      <div class="grid__item large--one-quarter  medium--one-half small--one-whole">
+        <div class="service service-1">
           <h3 class="text-uppercase">Service 1</h3>
         </div>
-        <div class="service-2 grid__item large--one-quarter  medium--one-half small--one-whole">
+      </div>
+      <div class="grid__item large--one-quarter  medium--one-half small--one-whole">
+        <div class="service service-2">
           <h3 class="text-uppercase">Service 2</h3>
         </div>
-        <div class="service-3 grid__item large--one-quarter  medium--one-half small--one-whole">
+      </div>
+      <div class="grid__item large--one-quarter  medium--one-half small--one-whole">
+        <div class="service service-3">
           <h3 class="text-uppercase">Service 3</h3>
         </div>
-        <div class="service-4 grid__item large--one-quarter  medium--one-half small--one-whole">
+      </div>
+      <div class="grid__item large--one-quarter  medium--one-half small--one-whole">
+        <div class="service service-4">
           <h3 class="text-uppercase">Service 4</h3>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer role="contentinfo">
